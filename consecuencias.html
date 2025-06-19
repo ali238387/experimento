@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consecuencias - PetStar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1565C0;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-content img {
+      width: 90px;
+      height: auto;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      color: #0D47A1;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #eeeeee;
+      padding-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+      padding-left: 1.2em;
+      position: relative;
+    }
+
+    li::before {
+      content: '✔️';
+      position: absolute;
+      left: 0;
+      color: #43A047;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      background-color: #eeeeee;
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      section {
+        padding: 25px;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="header-content" style="flex-direction: row; justify-content: center;">
+    <img src="https://materialesecologicos.es/wp-content/uploads/2019/06/tereftalato-de-polietileno.png" alt="Logo de PetStar" style="width: 70px; margin-right: 15px;">
+    <h1>PetStar - Reciclaje de PET</h1>
+  </div>
+</header>
+
+
+  <main>
+    <section>
+      <h2>Consecuencias de la Falta de Reciclaje</h2>
+      <p>La ausencia de una cultura de reciclaje conlleva impactos negativos tanto ambientales como sociales y económicos.</p>
+      <p>Comprender estas consecuencias permite valorar la importancia de adoptar prácticas sostenibles y responsables con el medio ambiente.</p>
+    </section>
+
+    <section>
+      <h2>Principales Consecuencias</h2>
+      <ul>
+        <li>🌍 Aumento de la contaminación del suelo, aire y agua debido al mal manejo de residuos.</li>
+        <li>🐢 Afectación grave a la fauna marina y terrestre por la ingestión o enredo con plásticos.</li>
+        <li>🏞️ Saturación de rellenos sanitarios y pérdida de espacios naturales.</li>
+        <li>🔥 Incremento de emisiones contaminantes al quemar residuos no reciclados.</li>
+        <li>📉 Desaprovechamiento de recursos valiosos que podrían reintegrarse a la cadena productiva.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PET GAG - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

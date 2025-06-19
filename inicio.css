@@ -1,0 +1,179 @@
+/* RESET Y FUENTE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #f5fafd);
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+/* HEADER DESTACADO */
+header {
+  background: linear-gradient(90deg, #0d47a1, #1565c0);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-bottom: 6px solid #64b5f6;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  animation: fadeInDown 1s ease-out;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.2s ease-in;
+  transition: all 0.3s ease-in-out;
+}
+
+/* TITULOS DE SECCIÓN */
+main h2 {
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  border-left: 6px solid #64b5f6;
+  padding-left: 12px;
+}
+
+/* PÁRRAFOS */
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* LISTAS */
+ul {
+  padding-left: 25px;
+}
+
+ul li {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  color: #1565c0;
+  font-size: 1rem;
+}
+
+/* FOOTER ELEGANTE */
+footer {
+  background-color: #e3eaf2;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 60px;
+  border-top: 2px solid #90caf9;
+}
+
+/* ANIMACIONES */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  main h2 {
+    font-size: 1.6rem;
+  }
+
+  main p, ul li {
+    font-size: 1rem;
+  }
+}
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.tips-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tips-text h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.tips-text ul {
+  padding-left: 20px;
+}
+
+.tips-text li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tips-text li::before {
+  content: "🔄";
+  position: absolute;
+  left: 0;
+  color: #1565c0;
+}
+
+.tips-image {
+  flex-shrink: 0;
+}
+
+.tips-image img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

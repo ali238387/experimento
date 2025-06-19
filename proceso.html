@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proceso de Reciclaje de PET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #1565C0;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .process-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .step:hover {
+      transform: translateY(-3px);
+    }
+
+    .step-number {
+      background-color: #1565C0;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step h3 {
+      color: #0D47A1;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .step-icon {
+      font-size: 2rem;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .step {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .step-icon {
+        margin: 0;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>♻️ Proceso de Reciclaje de PET</h1>
+      <p>Descubre cómo se transforman las botellas de plástico en nuevos productos</p>
+    </div>
+
+    <div class="process-container">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Materia: Reacciones Químicas</h3>
+          <p>En esta materia realizamos lo siguiente:</p>
+          <p>Realizamos investigaciones o conceptos de lo que es el PET, y realizamos y organizamos la estructura del techo PET</p>
+        </div>
+        <div class="step-icon">🧪</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Materia: Ciencias Sociales</h3>
+          <p>Realizamos investigaciones y creamos fuentes de información en redes sociales</p>
+        </div>
+        <div class="step-icon">🔍</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Materia: Matemáticas</h3>
+          <p>Realizamos una estructura en 3D del techo al igual un prototipo de lo que se ocuparía al realizar nuestro diseño en 3D</p>
+        </div>
+        <div class="step-icon">📐</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Conciencia Histórica</h3>
+          <p>Realizamos un cronograma en orden lo que llevaría a cabo durante el proceso del proyecto PET</p>
+        </div>
+        <div class="step-icon">📅</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Inglés IV</h3>
+          <p>Realizamos una presentación para mostrar el avance y resultados que se realizaron en el proyecto.</p>
+        </div>
+        <div class="step-icon">🎤</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h3>Submódulo 1</h3>
+          <p>Realizamos una página web para informar el proyecto que realizamos en nuestra institución y con información relacionada al PET.</p>
+        </div>
+        <div class="step-icon">💻</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
